@@ -5,10 +5,10 @@
 - [Usage Example](#usage-example)
 - [Class Overview](#class-overview)
     - [Attributes](#attributes)
+    - [Limitations](#limitations)
     - [Error Messages](#error-messages)
     - [Methods](#methods)
-  - [Insights](#insights)
-  - [Limitations](#limitations)
+ 
 - [Tests Covered](#tests-covered)
 - [Statistical defence](#statistical-defence-can-be-found-in-statistical_defense_readmemd)
 
@@ -36,6 +36,11 @@ print(random_gen.next_num())  # Outputs a random number based on given probabili
 - **_MAX_ALLOWED_INT (int)**: Maximum allowed integer (10^9).
 - **_MAX_LIST_LENGTH (int)**: Maximum list length (1000).
 
+### Limitations
+1. Only integers with an absolute value ≤ 10^9 are permitted.
+2. The probabilities must sum to 1.0. (To adhere to probability theory)
+3. The length of the numbers and probabilities lists cannot exceed 1000.
+
 #### Error Messages
 Various error messages are defined as class attributes to handle various input discrepancies:
 - Mismatched list lengths.
@@ -56,18 +61,6 @@ Various error messages are defined as class attributes to handle various input d
 - **_compute_cumulative_probabilities**: Calculates the cumulative probabilities.
   
 - **_find_insert_position**: Binary search function used to swiftly find the suitable interval for a generated random probability.
-
-### Insights
-- **Error Handling**: `RandomGen` class has comprehensive error checks for data integrity, ensuring that users provide valid input. This is crucial for maintaining the reliability of generated random numbers.
-
-- **Data Processing**: The class also processes the provided data, such as merging duplicate numbers and summing their respective probabilities.
-
-- **Efficiency**: Binary search in `next_num()` ensures swift lookup times. This improves efficiency, especially for larger lists.
-
-### Limitations
-1. Only integers with an absolute value ≤ 10^9 are permitted.
-2. The probabilities must sum to 1.0.
-3. The length of the numbers and probabilities lists cannot exceed 1000.
 
 ---
 
