@@ -5,7 +5,6 @@
 - [Usage Example](#usage-example)
 - [Class Overview](#class-overview)
     - [Attributes](#attributes)
-    - [Limitations](#limitations)
     - [Error Messages](#error-messages)
     - [Methods](#methods)
 - [Statistical Defence](#statistical-defence)
