@@ -49,6 +49,25 @@ The solution leverages binary search within the `next_num()` method to efficient
 - Regular traversal would typically operate at a complexity of O(n).
 - Using binary search, this complexity is optimized to O(log n), offering faster lookup times, especially for larger lists.
 
+Certainly! Here's a comparative example to illustrate the performance difference:
+
+#### Example:
+
+Let's consider a scenario where we have a list of 1,024 numbers. This number is chosen because it's \(2^{10}\), so it will help visualize the logarithmic benefit.
+
+1. **Regular Traversal (O(n)):**
+   
+   In the worst-case scenario, where the number we are looking for is at the end of the list or not in the list at all, we would need to check all 1,024 numbers one-by-one.
+
+2. **Binary Search (O(log n)):**
+
+   For a list of 1,024 numbers:
+   - First, check the middle number: this divides the list into two halves (512 numbers each).
+   - Let's assume our number is in the second half. We then check the middle of this half, further dividing it into two parts of 256 numbers each.
+   - If we continue this process, the progression will be: 512 -> 256 -> 128 -> 64 -> 32 -> 16 -> 8 -> 4 -> 2 -> 1.
+
+   In the worst-case scenario, we would only need to check **10 times** to either find the number or determine it's not in the list, compared to the 1,024 checks required for regular traversal.
+
 ---
 
 **Thank you for visiting this repository!** We hope this README provides a clear understanding of the problem and the implemented solution.
