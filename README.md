@@ -96,3 +96,5 @@ Various error messages are defined as class attributes to handle various input d
 By using this extensive suite of tests, we aim to cover every possible edge case and scenario, ensuring the robustness and reliability of the `RandomGen` class.
 
 ---
+
+## Statistical Defence can be found in Statistical_Defense_ReadMe.md
