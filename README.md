@@ -90,7 +90,7 @@ Various error messages are defined as class attributes to handle various input d
 ---
 
 ## Statistical Defence 
-- can be found in Statistical_Defense_ReadMe.md 
+- Can be found in Statistical_Defense_ReadMe.md 
 
 ## Unit Tests Suite
 1. **Initialization and validation tests**: These tests check the robustness of the class initialization procedure.
