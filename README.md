@@ -103,9 +103,9 @@ Various error messages are defined as class attributes to handle various input d
    - **Number size validation**: Confirms that only numbers within the permitted range are accepted.
    
 2. **`next_num` method tests**: These tests validate the core functionality of generating numbers based on their associated probabilities.
-   - **Basic input check**: Verifies the method's output with simple, non-duplicate values.
+   - **Sanity check with basic input**: Verifies the method's output with simple, non-duplicate values.
    - **Handling duplicates**: Confirms that the method correctly processes and returns numbers even when there are duplicates in the numbers list.
-   - **Single input test**: Checks the behavior of the class when only one number and its probability are provided.
+   - **Sanity check with only 1 number and probability**: Checks the behavior of the class when only one number and its probability are provided.
    - **Non-adjacent duplicates**: Validates the method's response when there are non-consecutive duplicate numbers in the list.
    - **List with all duplicates**: Checks the method's behavior when every number in the list is identical.
    - **Zero probabilities**: Ensures that the method can handle and return numbers even when some of them have a zero probability.
