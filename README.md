@@ -7,19 +7,18 @@ I've tackled a task that revolves around coding out probability theory. Here's a
 Fundamentals of Probability Theory
 
 - The sum of probabilities for all possible outcomes should always be 1.
-- Cumulative probabilities represent the likelihood of an event X being less than or equal to a certain value. It's useful for determining the probability of an event falling within a certain range.
-Implementation Details
+- Cumulative probabilities represent the likelihood of an event X being less than or equal to a certain value.
 
 My code starts with the RandomGen function that requires two inputs: a list of numbers and their associated probabilities.
 
 1. Initial checks ensure input integrity - verifying the correct shapes and confirming that probabilities total to 1. I then calculate cumulative probabilities to set my ranges.
 
-2. The next_num function generates a random value and determines its position within the probability ranges, extracting the corresponding number from the list.
-   - Given that my inputs are sorted, I've leveraged a binary search for efficiency. So, for a list with 1000 items, we only loop through a maximum of 10 times, as opposed to potentially 1000 with a standard search.
+2. The next_num function generates a random value and determines which probability range it falls into, extracting the corresponding number from the list.
+   - Given that both numbers and probability arrays are ordered corresponingly (sorted), I've leveraged a binary search for efficiency. So, for a list with 1000 items, we only loop through a maximum of 10 times, as opposed to potentially 1000 with a standard search.
 
 3. Validation of code integrity
     - Unit tests suite implemented for edge cases
-    - Heavy procedurally generates test for [Statistical Defence](./Statistical_Defense_ReadMe.md) (ran 100 milion times)
+    - Heavy procedurally generated test for [Statistical Defence](./Statistical_Defense_ReadMe.md) (ran 100 milion times)
 
 Simpler and Pythonic Alternatives
 
