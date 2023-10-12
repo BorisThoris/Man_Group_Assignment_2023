@@ -36,11 +36,6 @@ print(random_gen.next_num())  # Outputs a random number based on given probabili
 - **_MAX_ALLOWED_INT (int)**: Maximum allowed integer (10^9).
 - **_MAX_LIST_LENGTH (int)**: Maximum list length (1000).
 
-### Limitations
-1. Only integers with an absolute value ≤ 10^9 are permitted.
-2. The probabilities must sum to 1.0. (To adhere to probability theory)
-3. The length of the numbers and probabilities lists cannot exceed 1000.
-
 #### Error Messages
 Various error messages are defined as class attributes to handle various input discrepancies:
 - Mismatched list lengths.
@@ -64,7 +59,10 @@ Various error messages are defined as class attributes to handle various input d
 
 ---
 
-## Tests Covered
+## Statistical Defence 
+- can be found in Statistical_Defense_ReadMe.md 
+
+## Unit Tests Suite
 1. **Initialization and validation tests**: These tests check the robustness of the class initialization procedure.
    - **Length mismatch**: Verifies that the class raises an error if the number of elements in the numbers list doesn't match the probabilities list.
    - **Random numbers type-check**: Ensures that only integers are accepted as valid numbers.
@@ -86,5 +84,3 @@ Various error messages are defined as class attributes to handle various input d
 By using this extensive suite of tests, we aim to cover every possible edge case and scenario, ensuring the robustness and reliability of the `RandomGen` class.
 
 ---
-
-## Statistical Defence can be found in Statistical_Defense_ReadMe.md[Statistical_Defense_ReadMe.md]
