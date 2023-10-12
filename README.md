@@ -8,8 +8,8 @@
     - [Limitations](#limitations)
     - [Error Messages](#error-messages)
     - [Methods](#methods)
-- [Statistical Defence](#statistical-defence-can-be-found-in-statistical_defense_readmemd)
-- [Unit Tests Suite](#tests-covered)
+- [Statistical Defence](#statistical-defence)
+- [Unit Tests Suite](#unit-tests-suite)
 
 
 ---
