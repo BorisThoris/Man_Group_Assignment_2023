@@ -1,7 +1,41 @@
-# Algorithms Coding Assignment
+## Objective
+Create a class `RandomGen` that can generate random numbers from a list based on specified probabilities. 
+Also, implement the `next_num()` method and accompanying unit tests.
+
+I've tackled a task that revolves around coding out probability theory. Here's a brief breakdown:
+
+Fundamentals of Probability Theory
+
+- The sum of probabilities for all possible outcomes should always be 1.
+- Cumulative probabilities represent the likelihood of an event X being less than or equal to a certain value. It's useful for determining the probability of an event falling within a certain range.
+Implementation Details
+
+My code starts with the RandomGen function that requires two inputs: a list of numbers and their associated probabilities.
+
+1. Initial checks ensure input integrity - verifying the correct shapes and confirming that probabilities total to 1. I then calculate cumulative probabilities to set my ranges.
+
+2. The next_num function generates a random value and determines its position within the probability ranges, extracting the corresponding number from the list.
+   - Given that my inputs are sorted, I've leveraged a binary search for efficiency. So, for a list with 1000 items, we only loop through a maximum of 10 times, as opposed to potentially 1000 with a standard search.
+
+3. Validation of code integrity
+    - Unit tests suite implemented for edge cases
+    - Heavy procedurally generates test for [Statistical Defence](#statistical-defence) (ran 100 milion times)
+
+Simpler and Pythonic Alternatives
+
+- numpy.random.choice(): This is a handy function that draws random samples from a 1D array, perfect for our use-case.
+- Python's built-in random.choices: This offers flexibility with weights or cumulative weights to influence the random selection process.
+- bisect: Useful for searching through cumulative probabilities since it inherently uses binary search on sorted arrays.
+
+
+
+
+
+-----
+
+## Technical Details:
 
 **Content**
-- [Objective](#objective)
 - [Usage Example](#usage-example)
 - [Class Overview](#class-overview)
     - [Attributes](#attributes)
@@ -11,10 +45,7 @@
 - [Unit Tests Suite](#unit-tests-suite)
 
 
----
 
-## Objective
-Create a class `RandomGen` that can generate random numbers from a list based on specified probabilities. Also, implement the `next_num()` method and accompanying unit tests.
 
 
 ## Usage Example
