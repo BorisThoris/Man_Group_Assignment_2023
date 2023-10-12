@@ -1,10 +1,9 @@
 # Algorithms Coding Assignment
 
-## Table of Contents
+**Content**
 - [Objective](#objective)
 - [Usage Example](#usage-example)
 - [Class Overview](#class-overview)
-  - [RandomGen](#randomgen)
     - [Attributes](#attributes)
     - [Error Messages](#error-messages)
     - [Methods](#methods)
@@ -18,7 +17,6 @@
 ## Objective
 Create a class `RandomGen` that can generate random numbers from a list based on specified probabilities. Also, implement the `next_num()` method and accompanying unit tests.
 
----
 
 ## Usage Example
 ```python
@@ -31,8 +29,6 @@ print(random_gen.next_num())  # Outputs a random number based on given probabili
 ---
 
 ## Class Overview
-
-### RandomGen
 
 #### Attributes
 - **_PROB_TOTAL (float)**: Expected total for the probabilities (1.0).
