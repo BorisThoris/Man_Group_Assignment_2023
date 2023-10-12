@@ -81,6 +81,3 @@ Various error messages are defined as class attributes to handle various input d
    - **List with all duplicates**: Checks the method's behavior when every number in the list is identical.
    - **Zero probabilities**: Ensures that the method can handle and return numbers even when some of them have a zero probability.
 
-By using this extensive suite of tests, we aim to cover every possible edge case and scenario, ensuring the robustness and reliability of the `RandomGen` class.
-
----
