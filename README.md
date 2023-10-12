@@ -19,7 +19,7 @@ My code starts with the RandomGen function that requires two inputs: a list of n
 
 3. Validation of code integrity
     - Unit tests suite implemented for edge cases
-    - Heavy procedurally generates test for [Statistical Defence](#statistical-defence) (ran 100 milion times)
+    - Heavy procedurally generates test for [Statistical Defence](./#Statistical_Defense_ReadMe.md) (ran 100 milion times)
 
 Simpler and Pythonic Alternatives
 
