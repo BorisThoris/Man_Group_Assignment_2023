@@ -15,7 +15,9 @@
 **Results:**
 `RandomGen` function passed  all tests with `0` Assertions, adhering to defined probabilities within a `2%` tolerance.
 
-## Due to the inherent unpredictability of random probabilities, this test shouldn't be included in the code, as there's never a 100% that it won't fail.
+
+## This test is slow but can be made to run less time, however: Due to the inherent unpredictability of random probabilities, this test shouldn't be included in the code, as there's never a 100% that it won't fail.
+
 
 **Test used:**
 ```python
